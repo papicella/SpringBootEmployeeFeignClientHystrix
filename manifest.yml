@@ -1,0 +1,13 @@
+---
+applications:
+- name: employee-feign-client-hystrix
+  memory: 1G
+  instances: 1
+  random-route: true
+  timeout: 180
+  path: ./target/springbootemployeefeignclienthystrix-0.0.1-SNAPSHOT.jar
+  services:
+    - service-registry
+    - circiut-breaker
+  env:
+    JAVA_OPTS: -Djava.security.egd=file:///dev/urando

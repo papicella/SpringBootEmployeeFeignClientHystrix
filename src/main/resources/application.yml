@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: springboot-employee-service-feign-hystrix-client
+
+security:
+  basic:
+    enabled: false # turn off securing our application endpoints
+
+management:
+  security:
+    enabled: false
